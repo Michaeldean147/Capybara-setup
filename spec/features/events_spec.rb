@@ -17,7 +17,7 @@ feature 'CRUDing Events' do
     fill_in "Description", with: "SantaCon"
     fill_in "Location", with: "Union Square"
     click_on "Create Event"
-    expect(page).to have_content("Union Square","SantaCon")
+    expect(page).to have_content("Union Square")
   end
 
   scenario 'user edits an event' do
